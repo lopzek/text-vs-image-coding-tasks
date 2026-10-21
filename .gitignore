@@ -1,0 +1,28 @@
+# ---- outputs of a reproduction: never part of the package ----
+runs/
+results.json
+census/
+calib/
+*.log
+*.jsonl.tmp
+# ---- the paper itself is distributed by the publisher, not here ----
+paper.pdf
+*.pdf
+# ---- environments, caches, build products ----
+.venv*/
+wheelhouse-vllm/
+.cache/
+.hf_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+# ---- editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

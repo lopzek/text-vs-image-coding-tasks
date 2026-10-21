@@ -1,0 +1,4038 @@
+{
+  "language": "python",
+  "split": "test",
+  "tier": "lt1000",
+  "line_lo": 200,
+  "line_hi": 1000,
+  "seed": 42,
+  "n_requested": 500,
+  "n_selected": 500,
+  "total_in_stratum": 1500,
+  "line_count_metric": "count('\\n') + (0 if endswith('\\n') else 1)",
+  "dataset": "microsoft/LCC_python",
+  "n_rows_total": 10000,
+  "datasets_version": "4.8.3",
+  "selected_content_sha256": "b4ab484761bb70f7468ded0cd57bf60bf459c1fdbc12cd43e90abe7bbaa66d57",
+  "example_indices": [
+    45,
+    52,
+    54,
+    81,
+    111,
+    138,
+    144,
+    159,
+    174,
+    187,
+    198,
+    236,
+    239,
+    256,
+    275,
+    289,
+    310,
+    315,
+    356,
+    406,
+    414,
+    427,
+    432,
+    453,
+    485,
+    501,
+    518,
+    533,
+    556,
+    563,
+    567,
+    591,
+    604,
+    607,
+    668,
+    674,
+    713,
+    724,
+    733,
+    746,
+    751,
+    758,
+    816,
+    829,
+    833,
+    846,
+    904,
+    912,
+    913,
+    920,
+    932,
+    949,
+    955,
+    988,
+    1009,
+    1022,
+    1054,
+    1063,
+    1067,
+    1092,
+    1120,
+    1122,
+    1139,
+    1141,
+    1167,
+    1189,
+    1229,
+    1265,
+    1267,
+    1270,
+    1280,
+    1289,
+    1317,
+    1329,
+    1348,
+    1352,
+    1361,
+    1370,
+    1426,
+    1449,
+    1538,
+    1541,
+    1544,
+    1553,
+    1576,
+    1655,
+    1701,
+    1745,
+    1762,
+    1769,
+    1820,
+    1835,
+    1852,
+    1953,
+    1955,
+    1970,
+    2008,
+    2027,
+    2047,
+    2064,
+    2076,
+    2136,
+    2168,
+    2201,
+    2203,
+    2260,
+    2294,
+    2302,
+    2337,
+    2351,
+    2360,
+    2392,
+    2421,
+    2423,
+    2434,
+    2449,
+    2476,
+    2515,
+    2545,
+    2561,
+    2598,
+    2605,
+    2613,
+    2627,
+    2631,
+    2694,
+    2710,
+    2732,
+    2738,
+    2743,
+    2765,
+    2786,
+    2797,
+    2807,
+    2837,
+    2856,
+    2863,
+    2881,
+    2886,
+    2893,
+    2906,
+    2911,
+    2997,
+    3022,
+    3030,
+    3051,
+    3078,
+    3081,
+    3106,
+    3125,
+    3133,
+    3140,
+    3152,
+    3184,
+    3191,
+    3280,
+    3320,
+    3321,
+    3351,
+    3357,
+    3358,
+    3411,
+    3426,
+    3468,
+    3471,
+    3486,
+    3510,
+    3532,
+    3541,
+    3544,
+    3557,
+    3592,
+    3607,
+    3609,
+    3634,
+    3667,
+    3679,
+    3681,
+    3723,
+    3751,
+    3783,
+    3785,
+    3788,
+    3803,
+    3820,
+    3827,
+    3837,
+    3862,
+    3900,
+    3966,
+    3975,
+    3978,
+    3979,
+    4000,
+    4020,
+    4025,
+    4033,
+    4123,
+    4132,
+    4133,
+    4150,
+    4153,
+    4166,
+    4188,
+    4202,
+    4221,
+    4227,
+    4232,
+    4256,
+    4278,
+    4290,
+    4299,
+    4304,
+    4312,
+    4352,
+    4360,
+    4397,
+    4411,
+    4543,
+    4554,
+    4630,
+    4646,
+    4661,
+    4668,
+    4716,
+    4745,
+    4748,
+    4750,
+    4756,
+    4784,
+    4785,
+    4809,
+    4831,
+    4856,
+    4860,
+    4866,
+    4892,
+    4893,
+    4895,
+    4897,
+    4900,
+    4904,
+    4931,
+    4934,
+    4935,
+    4942,
+    4963,
+    5022,
+    5045,
+    5046,
+    5054,
+    5085,
+    5127,
+    5158,
+    5217,
+    5251,
+    5260,
+    5305,
+    5338,
+    5343,
+    5344,
+    5395,
+    5415,
+    5435,
+    5460,
+    5472,
+    5474,
+    5489,
+    5490,
+    5500,
+    5520,
+    5528,
+    5549,
+    5586,
+    5591,
+    5615,
+    5616,
+    5644,
+    5665,
+    5682,
+    5686,
+    5696,
+    5718,
+    5728,
+    5733,
+    5742,
+    5780,
+    5781,
+    5785,
+    5824,
+    5834,
+    5847,
+    5851,
+    5853,
+    5855,
+    5889,
+    5894,
+    5902,
+    5919,
+    5972,
+    5978,
+    5998,
+    6021,
+    6036,
+    6085,
+    6101,
+    6108,
+    6126,
+    6142,
+    6234,
+    6237,
+    6283,
+    6299,
+    6343,
+    6378,
+    6379,
+    6387,
+    6406,
+    6423,
+    6483,
+    6488,
+    6507,
+    6512,
+    6523,
+    6524,
+    6534,
+    6562,
+    6603,
+    6644,
+    6754,
+    6763,
+    6769,
+    6782,
+    6810,
+    6868,
+    6881,
+    6931,
+    6935,
+    6939,
+    6989,
+    7024,
+    7042,
+    7048,
+    7051,
+    7082,
+    7167,
+    7208,
+    7234,
+    7296,
+    7328,
+    7350,
+    7389,
+    7393,
+    7417,
+    7427,
+    7465,
+    7469,
+    7486,
+    7537,
+    7562,
+    7574,
+    7609,
+    7621,
+    7628,
+    7636,
+    7641,
+    7652,
+    7665,
+    7680,
+    7692,
+    7704,
+    7737,
+    7741,
+    7768,
+    7788,
+    7806,
+    7839,
+    7867,
+    7869,
+    7870,
+    7882,
+    7995,
+    7998,
+    8000,
+    8005,
+    8048,
+    8143,
+    8160,
+    8184,
+    8187,
+    8188,
+    8204,
+    8207,
+    8216,
+    8223,
+    8252,
+    8255,
+    8259,
+    8277,
+    8300,
+    8308,
+    8314,
+    8333,
+    8337,
+    8348,
+    8373,
+    8375,
+    8378,
+    8417,
+    8426,
+    8432,
+    8438,
+    8444,
+    8478,
+    8479,
+    8483,
+    8523,
+    8526,
+    8539,
+    8580,
+    8595,
+    8611,
+    8639,
+    8658,
+    8685,
+    8745,
+    8769,
+    8772,
+    8788,
+    8799,
+    8802,
+    8806,
+    8835,
+    8842,
+    8845,
+    8891,
+    8937,
+    8941,
+    8954,
+    8956,
+    9014,
+    9030,
+    9034,
+    9044,
+    9109,
+    9116,
+    9134,
+    9159,
+    9181,
+    9193,
+    9207,
+    9212,
+    9215,
+    9229,
+    9239,
+    9242,
+    9264,
+    9286,
+    9295,
+    9296,
+    9304,
+    9341,
+    9343,
+    9364,
+    9395,
+    9401,
+    9405,
+    9406,
+    9410,
+    9418,
+    9449,
+    9450,
+    9472,
+    9518,
+    9545,
+    9569,
+    9573,
+    9624,
+    9658,
+    9660,
+    9677,
+    9714,
+    9723,
+    9730,
+    9736,
+    9739,
+    9755,
+    9769,
+    9783,
+    9801,
+    9811,
+    9832,
+    9900,
+    9902,
+    9905,
+    9930,
+    9949,
+    9967,
+    9981,
+    9990
+  ],
+  "pre_filter_total": 1500,
+  "filter_removed": 0,
+  "filter_removed_fraction": 0.0,
+  "filters_applied": {
+    "current_function_lines_max": 50,
+    "background_tokens_min": null,
+    "scan_scope": "full_split"
+  },
+  "derived_from": {
+    "phase": "rendering_ablation",
+    "sampler": "numpy.random.default_rng(42).choice(sorted pool, 500, replace=False), ids written ascending",
+    "source_manifests": [
+      "python_200-300.json",
+      "python_300-500.json",
+      "python_500-1000.json"
+    ],
+    "pool_size": 1500,
+    "sources": [
+      {
+        "position": 0,
+        "dataset_index": 45,
+        "lines": 238,
+        "source_bin": "200-300",
+        "source_position": 2
+      },
+      {
+        "position": 1,
+        "dataset_index": 52,
+        "lines": 759,
+        "source_bin": "500-1000",
+        "source_position": 1
+      },
+      {
+        "position": 2,
+        "dataset_index": 54,
+        "lines": 396,
+        "source_bin": "300-500",
+        "source_position": 4
+      },
+      {
+        "position": 3,
+        "dataset_index": 81,
+        "lines": 441,
+        "source_bin": "300-500",
+        "source_position": 6
+      },
+      {
+        "position": 4,
+        "dataset_index": 111,
+        "lines": 328,
+        "source_bin": "300-500",
+        "source_position": 11
+      },
+      {
+        "position": 5,
+        "dataset_index": 138,
+        "lines": 526,
+        "source_bin": "500-1000",
+        "source_position": 4
+      },
+      {
+        "position": 6,
+        "dataset_index": 144,
+        "lines": 686,
+        "source_bin": "500-1000",
+        "source_position": 5
+      },
+      {
+        "position": 7,
+        "dataset_index": 159,
+        "lines": 336,
+        "source_bin": "300-500",
+        "source_position": 15
+      },
+      {
+        "position": 8,
+        "dataset_index": 174,
+        "lines": 252,
+        "source_bin": "200-300",
+        "source_position": 6
+      },
+      {
+        "position": 9,
+        "dataset_index": 187,
+        "lines": 242,
+        "source_bin": "200-300",
+        "source_position": 7
+      },
+      {
+        "position": 10,
+        "dataset_index": 198,
+        "lines": 352,
+        "source_bin": "300-500",
+        "source_position": 16
+      },
+      {
+        "position": 11,
+        "dataset_index": 236,
+        "lines": 363,
+        "source_bin": "300-500",
+        "source_position": 19
+      },
+      {
+        "position": 12,
+        "dataset_index": 239,
+        "lines": 528,
+        "source_bin": "500-1000",
+        "source_position": 8
+      },
+      {
+        "position": 13,
+        "dataset_index": 256,
+        "lines": 236,
+        "source_bin": "200-300",
+        "source_position": 10
+      },
+      {
+        "position": 14,
+        "dataset_index": 275,
+        "lines": 403,
+        "source_bin": "300-500",
+        "source_position": 20
+      },
+      {
+        "position": 15,
+        "dataset_index": 289,
+        "lines": 209,
+        "source_bin": "200-300",
+        "source_position": 11
+      },
+      {
+        "position": 16,
+        "dataset_index": 310,
+        "lines": 249,
+        "source_bin": "200-300",
+        "source_position": 12
+      },
+      {
+        "position": 17,
+        "dataset_index": 315,
+        "lines": 510,
+        "source_bin": "500-1000",
+        "source_position": 11
+      },
+      {
+        "position": 18,
+        "dataset_index": 356,
+        "lines": 598,
+        "source_bin": "500-1000",
+        "source_position": 13
+      },
+      {
+        "position": 19,
+        "dataset_index": 406,
+        "lines": 634,
+        "source_bin": "500-1000",
+        "source_position": 16
+      },
+      {
+        "position": 20,
+        "dataset_index": 414,
+        "lines": 352,
+        "source_bin": "300-500",
+        "source_position": 25
+      },
+      {
+        "position": 21,
+        "dataset_index": 427,
+        "lines": 231,
+        "source_bin": "200-300",
+        "source_position": 21
+      },
+      {
+        "position": 22,
+        "dataset_index": 432,
+        "lines": 873,
+        "source_bin": "500-1000",
+        "source_position": 19
+      },
+      {
+        "position": 23,
+        "dataset_index": 453,
+        "lines": 366,
+        "source_bin": "300-500",
+        "source_position": 26
+      },
+      {
+        "position": 24,
+        "dataset_index": 485,
+        "lines": 697,
+        "source_bin": "500-1000",
+        "source_position": 26
+      },
+      {
+        "position": 25,
+        "dataset_index": 501,
+        "lines": 375,
+        "source_bin": "300-500",
+        "source_position": 30
+      },
+      {
+        "position": 26,
+        "dataset_index": 518,
+        "lines": 201,
+        "source_bin": "200-300",
+        "source_position": 26
+      },
+      {
+        "position": 27,
+        "dataset_index": 533,
+        "lines": 549,
+        "source_bin": "500-1000",
+        "source_position": 29
+      },
+      {
+        "position": 28,
+        "dataset_index": 556,
+        "lines": 205,
+        "source_bin": "200-300",
+        "source_position": 30
+      },
+      {
+        "position": 29,
+        "dataset_index": 563,
+        "lines": 303,
+        "source_bin": "300-500",
+        "source_position": 33
+      },
+      {
+        "position": 30,
+        "dataset_index": 567,
+        "lines": 277,
+        "source_bin": "200-300",
+        "source_position": 32
+      },
+      {
+        "position": 31,
+        "dataset_index": 591,
+        "lines": 201,
+        "source_bin": "200-300",
+        "source_position": 35
+      },
+      {
+        "position": 32,
+        "dataset_index": 604,
+        "lines": 287,
+        "source_bin": "200-300",
+        "source_position": 36
+      },
+      {
+        "position": 33,
+        "dataset_index": 607,
+        "lines": 336,
+        "source_bin": "300-500",
+        "source_position": 36
+      },
+      {
+        "position": 34,
+        "dataset_index": 668,
+        "lines": 363,
+        "source_bin": "300-500",
+        "source_position": 41
+      },
+      {
+        "position": 35,
+        "dataset_index": 674,
+        "lines": 527,
+        "source_bin": "500-1000",
+        "source_position": 33
+      },
+      {
+        "position": 36,
+        "dataset_index": 713,
+        "lines": 206,
+        "source_bin": "200-300",
+        "source_position": 42
+      },
+      {
+        "position": 37,
+        "dataset_index": 724,
+        "lines": 359,
+        "source_bin": "300-500",
+        "source_position": 43
+      },
+      {
+        "position": 38,
+        "dataset_index": 733,
+        "lines": 213,
+        "source_bin": "200-300",
+        "source_position": 45
+      },
+      {
+        "position": 39,
+        "dataset_index": 746,
+        "lines": 976,
+        "source_bin": "500-1000",
+        "source_position": 36
+      },
+      {
+        "position": 40,
+        "dataset_index": 751,
+        "lines": 221,
+        "source_bin": "200-300",
+        "source_position": 46
+      },
+      {
+        "position": 41,
+        "dataset_index": 758,
+        "lines": 658,
+        "source_bin": "500-1000",
+        "source_position": 37
+      },
+      {
+        "position": 42,
+        "dataset_index": 816,
+        "lines": 244,
+        "source_bin": "200-300",
+        "source_position": 49
+      },
+      {
+        "position": 43,
+        "dataset_index": 829,
+        "lines": 238,
+        "source_bin": "200-300",
+        "source_position": 51
+      },
+      {
+        "position": 44,
+        "dataset_index": 833,
+        "lines": 425,
+        "source_bin": "300-500",
+        "source_position": 48
+      },
+      {
+        "position": 45,
+        "dataset_index": 846,
+        "lines": 211,
+        "source_bin": "200-300",
+        "source_position": 53
+      },
+      {
+        "position": 46,
+        "dataset_index": 904,
+        "lines": 609,
+        "source_bin": "500-1000",
+        "source_position": 44
+      },
+      {
+        "position": 47,
+        "dataset_index": 912,
+        "lines": 249,
+        "source_bin": "200-300",
+        "source_position": 57
+      },
+      {
+        "position": 48,
+        "dataset_index": 913,
+        "lines": 229,
+        "source_bin": "200-300",
+        "source_position": 58
+      },
+      {
+        "position": 49,
+        "dataset_index": 920,
+        "lines": 877,
+        "source_bin": "500-1000",
+        "source_position": 45
+      },
+      {
+        "position": 50,
+        "dataset_index": 932,
+        "lines": 207,
+        "source_bin": "200-300",
+        "source_position": 60
+      },
+      {
+        "position": 51,
+        "dataset_index": 949,
+        "lines": 206,
+        "source_bin": "200-300",
+        "source_position": 62
+      },
+      {
+        "position": 52,
+        "dataset_index": 955,
+        "lines": 207,
+        "source_bin": "200-300",
+        "source_position": 63
+      },
+      {
+        "position": 53,
+        "dataset_index": 988,
+        "lines": 210,
+        "source_bin": "200-300",
+        "source_position": 69
+      },
+      {
+        "position": 54,
+        "dataset_index": 1009,
+        "lines": 344,
+        "source_bin": "300-500",
+        "source_position": 55
+      },
+      {
+        "position": 55,
+        "dataset_index": 1022,
+        "lines": 360,
+        "source_bin": "300-500",
+        "source_position": 57
+      },
+      {
+        "position": 56,
+        "dataset_index": 1054,
+        "lines": 321,
+        "source_bin": "300-500",
+        "source_position": 58
+      },
+      {
+        "position": 57,
+        "dataset_index": 1063,
+        "lines": 329,
+        "source_bin": "300-500",
+        "source_position": 59
+      },
+      {
+        "position": 58,
+        "dataset_index": 1067,
+        "lines": 328,
+        "source_bin": "300-500",
+        "source_position": 60
+      },
+      {
+        "position": 59,
+        "dataset_index": 1092,
+        "lines": 207,
+        "source_bin": "200-300",
+        "source_position": 74
+      },
+      {
+        "position": 60,
+        "dataset_index": 1120,
+        "lines": 206,
+        "source_bin": "200-300",
+        "source_position": 77
+      },
+      {
+        "position": 61,
+        "dataset_index": 1122,
+        "lines": 385,
+        "source_bin": "300-500",
+        "source_position": 62
+      },
+      {
+        "position": 62,
+        "dataset_index": 1139,
+        "lines": 494,
+        "source_bin": "300-500",
+        "source_position": 63
+      },
+      {
+        "position": 63,
+        "dataset_index": 1141,
+        "lines": 536,
+        "source_bin": "500-1000",
+        "source_position": 47
+      },
+      {
+        "position": 64,
+        "dataset_index": 1167,
+        "lines": 252,
+        "source_bin": "200-300",
+        "source_position": 79
+      },
+      {
+        "position": 65,
+        "dataset_index": 1189,
+        "lines": 624,
+        "source_bin": "500-1000",
+        "source_position": 50
+      },
+      {
+        "position": 66,
+        "dataset_index": 1229,
+        "lines": 414,
+        "source_bin": "300-500",
+        "source_position": 66
+      },
+      {
+        "position": 67,
+        "dataset_index": 1265,
+        "lines": 528,
+        "source_bin": "500-1000",
+        "source_position": 54
+      },
+      {
+        "position": 68,
+        "dataset_index": 1267,
+        "lines": 334,
+        "source_bin": "300-500",
+        "source_position": 68
+      },
+      {
+        "position": 69,
+        "dataset_index": 1270,
+        "lines": 375,
+        "source_bin": "300-500",
+        "source_position": 69
+      },
+      {
+        "position": 70,
+        "dataset_index": 1280,
+        "lines": 288,
+        "source_bin": "200-300",
+        "source_position": 80
+      },
+      {
+        "position": 71,
+        "dataset_index": 1289,
+        "lines": 232,
+        "source_bin": "200-300",
+        "source_position": 81
+      },
+      {
+        "position": 72,
+        "dataset_index": 1317,
+        "lines": 413,
+        "source_bin": "300-500",
+        "source_position": 71
+      },
+      {
+        "position": 73,
+        "dataset_index": 1329,
+        "lines": 411,
+        "source_bin": "300-500",
+        "source_position": 72
+      },
+      {
+        "position": 74,
+        "dataset_index": 1348,
+        "lines": 476,
+        "source_bin": "300-500",
+        "source_position": 73
+      },
+      {
+        "position": 75,
+        "dataset_index": 1352,
+        "lines": 408,
+        "source_bin": "300-500",
+        "source_position": 76
+      },
+      {
+        "position": 76,
+        "dataset_index": 1361,
+        "lines": 653,
+        "source_bin": "500-1000",
+        "source_position": 59
+      },
+      {
+        "position": 77,
+        "dataset_index": 1370,
+        "lines": 345,
+        "source_bin": "300-500",
+        "source_position": 79
+      },
+      {
+        "position": 78,
+        "dataset_index": 1426,
+        "lines": 223,
+        "source_bin": "200-300",
+        "source_position": 88
+      },
+      {
+        "position": 79,
+        "dataset_index": 1449,
+        "lines": 303,
+        "source_bin": "300-500",
+        "source_position": 83
+      },
+      {
+        "position": 80,
+        "dataset_index": 1538,
+        "lines": 817,
+        "source_bin": "500-1000",
+        "source_position": 66
+      },
+      {
+        "position": 81,
+        "dataset_index": 1541,
+        "lines": 318,
+        "source_bin": "300-500",
+        "source_position": 88
+      },
+      {
+        "position": 82,
+        "dataset_index": 1544,
+        "lines": 851,
+        "source_bin": "500-1000",
+        "source_position": 67
+      },
+      {
+        "position": 83,
+        "dataset_index": 1553,
+        "lines": 909,
+        "source_bin": "500-1000",
+        "source_position": 69
+      },
+      {
+        "position": 84,
+        "dataset_index": 1576,
+        "lines": 336,
+        "source_bin": "300-500",
+        "source_position": 89
+      },
+      {
+        "position": 85,
+        "dataset_index": 1655,
+        "lines": 548,
+        "source_bin": "500-1000",
+        "source_position": 76
+      },
+      {
+        "position": 86,
+        "dataset_index": 1701,
+        "lines": 310,
+        "source_bin": "300-500",
+        "source_position": 94
+      },
+      {
+        "position": 87,
+        "dataset_index": 1745,
+        "lines": 818,
+        "source_bin": "500-1000",
+        "source_position": 79
+      },
+      {
+        "position": 88,
+        "dataset_index": 1762,
+        "lines": 579,
+        "source_bin": "500-1000",
+        "source_position": 82
+      },
+      {
+        "position": 89,
+        "dataset_index": 1769,
+        "lines": 667,
+        "source_bin": "500-1000",
+        "source_position": 83
+      },
+      {
+        "position": 90,
+        "dataset_index": 1820,
+        "lines": 591,
+        "source_bin": "500-1000",
+        "source_position": 87
+      },
+      {
+        "position": 91,
+        "dataset_index": 1835,
+        "lines": 534,
+        "source_bin": "500-1000",
+        "source_position": 88
+      },
+      {
+        "position": 92,
+        "dataset_index": 1852,
+        "lines": 290,
+        "source_bin": "200-300",
+        "source_position": 99
+      },
+      {
+        "position": 93,
+        "dataset_index": 1953,
+        "lines": 351,
+        "source_bin": "300-500",
+        "source_position": 107
+      },
+      {
+        "position": 94,
+        "dataset_index": 1955,
+        "lines": 220,
+        "source_bin": "200-300",
+        "source_position": 104
+      },
+      {
+        "position": 95,
+        "dataset_index": 1970,
+        "lines": 757,
+        "source_bin": "500-1000",
+        "source_position": 93
+      },
+      {
+        "position": 96,
+        "dataset_index": 2008,
+        "lines": 254,
+        "source_bin": "200-300",
+        "source_position": 108
+      },
+      {
+        "position": 97,
+        "dataset_index": 2027,
+        "lines": 693,
+        "source_bin": "500-1000",
+        "source_position": 97
+      },
+      {
+        "position": 98,
+        "dataset_index": 2047,
+        "lines": 417,
+        "source_bin": "300-500",
+        "source_position": 111
+      },
+      {
+        "position": 99,
+        "dataset_index": 2064,
+        "lines": 340,
+        "source_bin": "300-500",
+        "source_position": 113
+      },
+      {
+        "position": 100,
+        "dataset_index": 2076,
+        "lines": 205,
+        "source_bin": "200-300",
+        "source_position": 112
+      },
+      {
+        "position": 101,
+        "dataset_index": 2136,
+        "lines": 926,
+        "source_bin": "500-1000",
+        "source_position": 99
+      },
+      {
+        "position": 102,
+        "dataset_index": 2168,
+        "lines": 294,
+        "source_bin": "200-300",
+        "source_position": 115
+      },
+      {
+        "position": 103,
+        "dataset_index": 2201,
+        "lines": 501,
+        "source_bin": "500-1000",
+        "source_position": 102
+      },
+      {
+        "position": 104,
+        "dataset_index": 2203,
+        "lines": 544,
+        "source_bin": "500-1000",
+        "source_position": 103
+      },
+      {
+        "position": 105,
+        "dataset_index": 2260,
+        "lines": 520,
+        "source_bin": "500-1000",
+        "source_position": 104
+      },
+      {
+        "position": 106,
+        "dataset_index": 2294,
+        "lines": 702,
+        "source_bin": "500-1000",
+        "source_position": 105
+      },
+      {
+        "position": 107,
+        "dataset_index": 2302,
+        "lines": 256,
+        "source_bin": "200-300",
+        "source_position": 119
+      },
+      {
+        "position": 108,
+        "dataset_index": 2337,
+        "lines": 238,
+        "source_bin": "200-300",
+        "source_position": 122
+      },
+      {
+        "position": 109,
+        "dataset_index": 2351,
+        "lines": 619,
+        "source_bin": "500-1000",
+        "source_position": 108
+      },
+      {
+        "position": 110,
+        "dataset_index": 2360,
+        "lines": 741,
+        "source_bin": "500-1000",
+        "source_position": 109
+      },
+      {
+        "position": 111,
+        "dataset_index": 2392,
+        "lines": 984,
+        "source_bin": "500-1000",
+        "source_position": 111
+      },
+      {
+        "position": 112,
+        "dataset_index": 2421,
+        "lines": 201,
+        "source_bin": "200-300",
+        "source_position": 128
+      },
+      {
+        "position": 113,
+        "dataset_index": 2423,
+        "lines": 207,
+        "source_bin": "200-300",
+        "source_position": 129
+      },
+      {
+        "position": 114,
+        "dataset_index": 2434,
+        "lines": 333,
+        "source_bin": "300-500",
+        "source_position": 128
+      },
+      {
+        "position": 115,
+        "dataset_index": 2449,
+        "lines": 704,
+        "source_bin": "500-1000",
+        "source_position": 113
+      },
+      {
+        "position": 116,
+        "dataset_index": 2476,
+        "lines": 327,
+        "source_bin": "300-500",
+        "source_position": 131
+      },
+      {
+        "position": 117,
+        "dataset_index": 2515,
+        "lines": 763,
+        "source_bin": "500-1000",
+        "source_position": 114
+      },
+      {
+        "position": 118,
+        "dataset_index": 2545,
+        "lines": 224,
+        "source_bin": "200-300",
+        "source_position": 135
+      },
+      {
+        "position": 119,
+        "dataset_index": 2561,
+        "lines": 650,
+        "source_bin": "500-1000",
+        "source_position": 115
+      },
+      {
+        "position": 120,
+        "dataset_index": 2598,
+        "lines": 212,
+        "source_bin": "200-300",
+        "source_position": 138
+      },
+      {
+        "position": 121,
+        "dataset_index": 2605,
+        "lines": 539,
+        "source_bin": "500-1000",
+        "source_position": 117
+      },
+      {
+        "position": 122,
+        "dataset_index": 2613,
+        "lines": 355,
+        "source_bin": "300-500",
+        "source_position": 135
+      },
+      {
+        "position": 123,
+        "dataset_index": 2627,
+        "lines": 210,
+        "source_bin": "200-300",
+        "source_position": 139
+      },
+      {
+        "position": 124,
+        "dataset_index": 2631,
+        "lines": 475,
+        "source_bin": "300-500",
+        "source_position": 136
+      },
+      {
+        "position": 125,
+        "dataset_index": 2694,
+        "lines": 222,
+        "source_bin": "200-300",
+        "source_position": 146
+      },
+      {
+        "position": 126,
+        "dataset_index": 2710,
+        "lines": 873,
+        "source_bin": "500-1000",
+        "source_position": 119
+      },
+      {
+        "position": 127,
+        "dataset_index": 2732,
+        "lines": 997,
+        "source_bin": "500-1000",
+        "source_position": 121
+      },
+      {
+        "position": 128,
+        "dataset_index": 2738,
+        "lines": 892,
+        "source_bin": "500-1000",
+        "source_position": 122
+      },
+      {
+        "position": 129,
+        "dataset_index": 2743,
+        "lines": 578,
+        "source_bin": "500-1000",
+        "source_position": 124
+      },
+      {
+        "position": 130,
+        "dataset_index": 2765,
+        "lines": 432,
+        "source_bin": "300-500",
+        "source_position": 143
+      },
+      {
+        "position": 131,
+        "dataset_index": 2786,
+        "lines": 558,
+        "source_bin": "500-1000",
+        "source_position": 127
+      },
+      {
+        "position": 132,
+        "dataset_index": 2797,
+        "lines": 671,
+        "source_bin": "500-1000",
+        "source_position": 128
+      },
+      {
+        "position": 133,
+        "dataset_index": 2807,
+        "lines": 223,
+        "source_bin": "200-300",
+        "source_position": 152
+      },
+      {
+        "position": 134,
+        "dataset_index": 2837,
+        "lines": 329,
+        "source_bin": "300-500",
+        "source_position": 146
+      },
+      {
+        "position": 135,
+        "dataset_index": 2856,
+        "lines": 823,
+        "source_bin": "500-1000",
+        "source_position": 130
+      },
+      {
+        "position": 136,
+        "dataset_index": 2863,
+        "lines": 283,
+        "source_bin": "200-300",
+        "source_position": 155
+      },
+      {
+        "position": 137,
+        "dataset_index": 2881,
+        "lines": 821,
+        "source_bin": "500-1000",
+        "source_position": 131
+      },
+      {
+        "position": 138,
+        "dataset_index": 2886,
+        "lines": 734,
+        "source_bin": "500-1000",
+        "source_position": 132
+      },
+      {
+        "position": 139,
+        "dataset_index": 2893,
+        "lines": 531,
+        "source_bin": "500-1000",
+        "source_position": 133
+      },
+      {
+        "position": 140,
+        "dataset_index": 2906,
+        "lines": 381,
+        "source_bin": "300-500",
+        "source_position": 147
+      },
+      {
+        "position": 141,
+        "dataset_index": 2911,
+        "lines": 206,
+        "source_bin": "200-300",
+        "source_position": 158
+      },
+      {
+        "position": 142,
+        "dataset_index": 2997,
+        "lines": 500,
+        "source_bin": "500-1000",
+        "source_position": 138
+      },
+      {
+        "position": 143,
+        "dataset_index": 3022,
+        "lines": 224,
+        "source_bin": "200-300",
+        "source_position": 161
+      },
+      {
+        "position": 144,
+        "dataset_index": 3030,
+        "lines": 222,
+        "source_bin": "200-300",
+        "source_position": 162
+      },
+      {
+        "position": 145,
+        "dataset_index": 3051,
+        "lines": 310,
+        "source_bin": "300-500",
+        "source_position": 151
+      },
+      {
+        "position": 146,
+        "dataset_index": 3078,
+        "lines": 641,
+        "source_bin": "500-1000",
+        "source_position": 143
+      },
+      {
+        "position": 147,
+        "dataset_index": 3081,
+        "lines": 747,
+        "source_bin": "500-1000",
+        "source_position": 144
+      },
+      {
+        "position": 148,
+        "dataset_index": 3106,
+        "lines": 588,
+        "source_bin": "500-1000",
+        "source_position": 147
+      },
+      {
+        "position": 149,
+        "dataset_index": 3125,
+        "lines": 584,
+        "source_bin": "500-1000",
+        "source_position": 148
+      },
+      {
+        "position": 150,
+        "dataset_index": 3133,
+        "lines": 361,
+        "source_bin": "300-500",
+        "source_position": 153
+      },
+      {
+        "position": 151,
+        "dataset_index": 3140,
+        "lines": 208,
+        "source_bin": "200-300",
+        "source_position": 167
+      },
+      {
+        "position": 152,
+        "dataset_index": 3152,
+        "lines": 743,
+        "source_bin": "500-1000",
+        "source_position": 150
+      },
+      {
+        "position": 153,
+        "dataset_index": 3184,
+        "lines": 277,
+        "source_bin": "200-300",
+        "source_position": 168
+      },
+      {
+        "position": 154,
+        "dataset_index": 3191,
+        "lines": 540,
+        "source_bin": "500-1000",
+        "source_position": 151
+      },
+      {
+        "position": 155,
+        "dataset_index": 3280,
+        "lines": 794,
+        "source_bin": "500-1000",
+        "source_position": 156
+      },
+      {
+        "position": 156,
+        "dataset_index": 3320,
+        "lines": 202,
+        "source_bin": "200-300",
+        "source_position": 171
+      },
+      {
+        "position": 157,
+        "dataset_index": 3321,
+        "lines": 248,
+        "source_bin": "200-300",
+        "source_position": 172
+      },
+      {
+        "position": 158,
+        "dataset_index": 3351,
+        "lines": 466,
+        "source_bin": "300-500",
+        "source_position": 160
+      },
+      {
+        "position": 159,
+        "dataset_index": 3357,
+        "lines": 376,
+        "source_bin": "300-500",
+        "source_position": 162
+      },
+      {
+        "position": 160,
+        "dataset_index": 3358,
+        "lines": 369,
+        "source_bin": "300-500",
+        "source_position": 163
+      },
+      {
+        "position": 161,
+        "dataset_index": 3411,
+        "lines": 204,
+        "source_bin": "200-300",
+        "source_position": 175
+      },
+      {
+        "position": 162,
+        "dataset_index": 3426,
+        "lines": 557,
+        "source_bin": "500-1000",
+        "source_position": 161
+      },
+      {
+        "position": 163,
+        "dataset_index": 3468,
+        "lines": 582,
+        "source_bin": "500-1000",
+        "source_position": 162
+      },
+      {
+        "position": 164,
+        "dataset_index": 3471,
+        "lines": 217,
+        "source_bin": "200-300",
+        "source_position": 179
+      },
+      {
+        "position": 165,
+        "dataset_index": 3486,
+        "lines": 201,
+        "source_bin": "200-300",
+        "source_position": 180
+      },
+      {
+        "position": 166,
+        "dataset_index": 3510,
+        "lines": 393,
+        "source_bin": "300-500",
+        "source_position": 170
+      },
+      {
+        "position": 167,
+        "dataset_index": 3532,
+        "lines": 546,
+        "source_bin": "500-1000",
+        "source_position": 166
+      },
+      {
+        "position": 168,
+        "dataset_index": 3541,
+        "lines": 420,
+        "source_bin": "300-500",
+        "source_position": 172
+      },
+      {
+        "position": 169,
+        "dataset_index": 3544,
+        "lines": 482,
+        "source_bin": "300-500",
+        "source_position": 174
+      },
+      {
+        "position": 170,
+        "dataset_index": 3557,
+        "lines": 311,
+        "source_bin": "300-500",
+        "source_position": 175
+      },
+      {
+        "position": 171,
+        "dataset_index": 3592,
+        "lines": 738,
+        "source_bin": "500-1000",
+        "source_position": 168
+      },
+      {
+        "position": 172,
+        "dataset_index": 3607,
+        "lines": 754,
+        "source_bin": "500-1000",
+        "source_position": 169
+      },
+      {
+        "position": 173,
+        "dataset_index": 3609,
+        "lines": 305,
+        "source_bin": "300-500",
+        "source_position": 180
+      },
+      {
+        "position": 174,
+        "dataset_index": 3634,
+        "lines": 281,
+        "source_bin": "200-300",
+        "source_position": 183
+      },
+      {
+        "position": 175,
+        "dataset_index": 3667,
+        "lines": 225,
+        "source_bin": "200-300",
+        "source_position": 186
+      },
+      {
+        "position": 176,
+        "dataset_index": 3679,
+        "lines": 237,
+        "source_bin": "200-300",
+        "source_position": 187
+      },
+      {
+        "position": 177,
+        "dataset_index": 3681,
+        "lines": 783,
+        "source_bin": "500-1000",
+        "source_position": 174
+      },
+      {
+        "position": 178,
+        "dataset_index": 3723,
+        "lines": 711,
+        "source_bin": "500-1000",
+        "source_position": 177
+      },
+      {
+        "position": 179,
+        "dataset_index": 3751,
+        "lines": 416,
+        "source_bin": "300-500",
+        "source_position": 187
+      },
+      {
+        "position": 180,
+        "dataset_index": 3783,
+        "lines": 445,
+        "source_bin": "300-500",
+        "source_position": 189
+      },
+      {
+        "position": 181,
+        "dataset_index": 3785,
+        "lines": 481,
+        "source_bin": "300-500",
+        "source_position": 190
+      },
+      {
+        "position": 182,
+        "dataset_index": 3788,
+        "lines": 601,
+        "source_bin": "500-1000",
+        "source_position": 182
+      },
+      {
+        "position": 183,
+        "dataset_index": 3803,
+        "lines": 231,
+        "source_bin": "200-300",
+        "source_position": 190
+      },
+      {
+        "position": 184,
+        "dataset_index": 3820,
+        "lines": 322,
+        "source_bin": "300-500",
+        "source_position": 192
+      },
+      {
+        "position": 185,
+        "dataset_index": 3827,
+        "lines": 235,
+        "source_bin": "200-300",
+        "source_position": 192
+      },
+      {
+        "position": 186,
+        "dataset_index": 3837,
+        "lines": 368,
+        "source_bin": "300-500",
+        "source_position": 194
+      },
+      {
+        "position": 187,
+        "dataset_index": 3862,
+        "lines": 543,
+        "source_bin": "500-1000",
+        "source_position": 185
+      },
+      {
+        "position": 188,
+        "dataset_index": 3900,
+        "lines": 388,
+        "source_bin": "300-500",
+        "source_position": 196
+      },
+      {
+        "position": 189,
+        "dataset_index": 3966,
+        "lines": 288,
+        "source_bin": "200-300",
+        "source_position": 197
+      },
+      {
+        "position": 190,
+        "dataset_index": 3975,
+        "lines": 204,
+        "source_bin": "200-300",
+        "source_position": 198
+      },
+      {
+        "position": 191,
+        "dataset_index": 3978,
+        "lines": 245,
+        "source_bin": "200-300",
+        "source_position": 199
+      },
+      {
+        "position": 192,
+        "dataset_index": 3979,
+        "lines": 886,
+        "source_bin": "500-1000",
+        "source_position": 191
+      },
+      {
+        "position": 193,
+        "dataset_index": 4000,
+        "lines": 319,
+        "source_bin": "300-500",
+        "source_position": 198
+      },
+      {
+        "position": 194,
+        "dataset_index": 4020,
+        "lines": 979,
+        "source_bin": "500-1000",
+        "source_position": 193
+      },
+      {
+        "position": 195,
+        "dataset_index": 4025,
+        "lines": 370,
+        "source_bin": "300-500",
+        "source_position": 199
+      },
+      {
+        "position": 196,
+        "dataset_index": 4033,
+        "lines": 209,
+        "source_bin": "200-300",
+        "source_position": 202
+      },
+      {
+        "position": 197,
+        "dataset_index": 4123,
+        "lines": 229,
+        "source_bin": "200-300",
+        "source_position": 206
+      },
+      {
+        "position": 198,
+        "dataset_index": 4132,
+        "lines": 342,
+        "source_bin": "300-500",
+        "source_position": 205
+      },
+      {
+        "position": 199,
+        "dataset_index": 4133,
+        "lines": 222,
+        "source_bin": "200-300",
+        "source_position": 207
+      },
+      {
+        "position": 200,
+        "dataset_index": 4150,
+        "lines": 524,
+        "source_bin": "500-1000",
+        "source_position": 197
+      },
+      {
+        "position": 201,
+        "dataset_index": 4153,
+        "lines": 706,
+        "source_bin": "500-1000",
+        "source_position": 198
+      },
+      {
+        "position": 202,
+        "dataset_index": 4166,
+        "lines": 213,
+        "source_bin": "200-300",
+        "source_position": 209
+      },
+      {
+        "position": 203,
+        "dataset_index": 4188,
+        "lines": 276,
+        "source_bin": "200-300",
+        "source_position": 210
+      },
+      {
+        "position": 204,
+        "dataset_index": 4202,
+        "lines": 343,
+        "source_bin": "300-500",
+        "source_position": 207
+      },
+      {
+        "position": 205,
+        "dataset_index": 4221,
+        "lines": 509,
+        "source_bin": "500-1000",
+        "source_position": 202
+      },
+      {
+        "position": 206,
+        "dataset_index": 4227,
+        "lines": 260,
+        "source_bin": "200-300",
+        "source_position": 211
+      },
+      {
+        "position": 207,
+        "dataset_index": 4232,
+        "lines": 830,
+        "source_bin": "500-1000",
+        "source_position": 203
+      },
+      {
+        "position": 208,
+        "dataset_index": 4256,
+        "lines": 294,
+        "source_bin": "200-300",
+        "source_position": 213
+      },
+      {
+        "position": 209,
+        "dataset_index": 4278,
+        "lines": 352,
+        "source_bin": "300-500",
+        "source_position": 213
+      },
+      {
+        "position": 210,
+        "dataset_index": 4290,
+        "lines": 379,
+        "source_bin": "300-500",
+        "source_position": 214
+      },
+      {
+        "position": 211,
+        "dataset_index": 4299,
+        "lines": 754,
+        "source_bin": "500-1000",
+        "source_position": 207
+      },
+      {
+        "position": 212,
+        "dataset_index": 4304,
+        "lines": 369,
+        "source_bin": "300-500",
+        "source_position": 215
+      },
+      {
+        "position": 213,
+        "dataset_index": 4312,
+        "lines": 224,
+        "source_bin": "200-300",
+        "source_position": 216
+      },
+      {
+        "position": 214,
+        "dataset_index": 4352,
+        "lines": 800,
+        "source_bin": "500-1000",
+        "source_position": 209
+      },
+      {
+        "position": 215,
+        "dataset_index": 4360,
+        "lines": 374,
+        "source_bin": "300-500",
+        "source_position": 219
+      },
+      {
+        "position": 216,
+        "dataset_index": 4397,
+        "lines": 202,
+        "source_bin": "200-300",
+        "source_position": 220
+      },
+      {
+        "position": 217,
+        "dataset_index": 4411,
+        "lines": 361,
+        "source_bin": "300-500",
+        "source_position": 224
+      },
+      {
+        "position": 218,
+        "dataset_index": 4543,
+        "lines": 327,
+        "source_bin": "300-500",
+        "source_position": 227
+      },
+      {
+        "position": 219,
+        "dataset_index": 4554,
+        "lines": 212,
+        "source_bin": "200-300",
+        "source_position": 228
+      },
+      {
+        "position": 220,
+        "dataset_index": 4630,
+        "lines": 736,
+        "source_bin": "500-1000",
+        "source_position": 223
+      },
+      {
+        "position": 221,
+        "dataset_index": 4646,
+        "lines": 274,
+        "source_bin": "200-300",
+        "source_position": 230
+      },
+      {
+        "position": 222,
+        "dataset_index": 4661,
+        "lines": 389,
+        "source_bin": "300-500",
+        "source_position": 230
+      },
+      {
+        "position": 223,
+        "dataset_index": 4668,
+        "lines": 636,
+        "source_bin": "500-1000",
+        "source_position": 225
+      },
+      {
+        "position": 224,
+        "dataset_index": 4716,
+        "lines": 229,
+        "source_bin": "200-300",
+        "source_position": 233
+      },
+      {
+        "position": 225,
+        "dataset_index": 4745,
+        "lines": 201,
+        "source_bin": "200-300",
+        "source_position": 234
+      },
+      {
+        "position": 226,
+        "dataset_index": 4748,
+        "lines": 264,
+        "source_bin": "200-300",
+        "source_position": 235
+      },
+      {
+        "position": 227,
+        "dataset_index": 4750,
+        "lines": 512,
+        "source_bin": "500-1000",
+        "source_position": 230
+      },
+      {
+        "position": 228,
+        "dataset_index": 4756,
+        "lines": 596,
+        "source_bin": "500-1000",
+        "source_position": 231
+      },
+      {
+        "position": 229,
+        "dataset_index": 4784,
+        "lines": 251,
+        "source_bin": "200-300",
+        "source_position": 237
+      },
+      {
+        "position": 230,
+        "dataset_index": 4785,
+        "lines": 784,
+        "source_bin": "500-1000",
+        "source_position": 232
+      },
+      {
+        "position": 231,
+        "dataset_index": 4809,
+        "lines": 350,
+        "source_bin": "300-500",
+        "source_position": 236
+      },
+      {
+        "position": 232,
+        "dataset_index": 4831,
+        "lines": 867,
+        "source_bin": "500-1000",
+        "source_position": 234
+      },
+      {
+        "position": 233,
+        "dataset_index": 4856,
+        "lines": 377,
+        "source_bin": "300-500",
+        "source_position": 239
+      },
+      {
+        "position": 234,
+        "dataset_index": 4860,
+        "lines": 436,
+        "source_bin": "300-500",
+        "source_position": 240
+      },
+      {
+        "position": 235,
+        "dataset_index": 4866,
+        "lines": 234,
+        "source_bin": "200-300",
+        "source_position": 243
+      },
+      {
+        "position": 236,
+        "dataset_index": 4892,
+        "lines": 626,
+        "source_bin": "500-1000",
+        "source_position": 237
+      },
+      {
+        "position": 237,
+        "dataset_index": 4893,
+        "lines": 721,
+        "source_bin": "500-1000",
+        "source_position": 238
+      },
+      {
+        "position": 238,
+        "dataset_index": 4895,
+        "lines": 200,
+        "source_bin": "200-300",
+        "source_position": 244
+      },
+      {
+        "position": 239,
+        "dataset_index": 4897,
+        "lines": 502,
+        "source_bin": "500-1000",
+        "source_position": 240
+      },
+      {
+        "position": 240,
+        "dataset_index": 4900,
+        "lines": 457,
+        "source_bin": "300-500",
+        "source_position": 242
+      },
+      {
+        "position": 241,
+        "dataset_index": 4904,
+        "lines": 715,
+        "source_bin": "500-1000",
+        "source_position": 241
+      },
+      {
+        "position": 242,
+        "dataset_index": 4931,
+        "lines": 506,
+        "source_bin": "500-1000",
+        "source_position": 243
+      },
+      {
+        "position": 243,
+        "dataset_index": 4934,
+        "lines": 261,
+        "source_bin": "200-300",
+        "source_position": 245
+      },
+      {
+        "position": 244,
+        "dataset_index": 4935,
+        "lines": 265,
+        "source_bin": "200-300",
+        "source_position": 246
+      },
+      {
+        "position": 245,
+        "dataset_index": 4942,
+        "lines": 207,
+        "source_bin": "200-300",
+        "source_position": 247
+      },
+      {
+        "position": 246,
+        "dataset_index": 4963,
+        "lines": 350,
+        "source_bin": "300-500",
+        "source_position": 247
+      },
+      {
+        "position": 247,
+        "dataset_index": 5022,
+        "lines": 571,
+        "source_bin": "500-1000",
+        "source_position": 246
+      },
+      {
+        "position": 248,
+        "dataset_index": 5045,
+        "lines": 248,
+        "source_bin": "200-300",
+        "source_position": 250
+      },
+      {
+        "position": 249,
+        "dataset_index": 5046,
+        "lines": 905,
+        "source_bin": "500-1000",
+        "source_position": 247
+      },
+      {
+        "position": 250,
+        "dataset_index": 5054,
+        "lines": 373,
+        "source_bin": "300-500",
+        "source_position": 252
+      },
+      {
+        "position": 251,
+        "dataset_index": 5085,
+        "lines": 679,
+        "source_bin": "500-1000",
+        "source_position": 248
+      },
+      {
+        "position": 252,
+        "dataset_index": 5127,
+        "lines": 245,
+        "source_bin": "200-300",
+        "source_position": 253
+      },
+      {
+        "position": 253,
+        "dataset_index": 5158,
+        "lines": 239,
+        "source_bin": "200-300",
+        "source_position": 256
+      },
+      {
+        "position": 254,
+        "dataset_index": 5217,
+        "lines": 340,
+        "source_bin": "300-500",
+        "source_position": 259
+      },
+      {
+        "position": 255,
+        "dataset_index": 5251,
+        "lines": 895,
+        "source_bin": "500-1000",
+        "source_position": 255
+      },
+      {
+        "position": 256,
+        "dataset_index": 5260,
+        "lines": 499,
+        "source_bin": "300-500",
+        "source_position": 262
+      },
+      {
+        "position": 257,
+        "dataset_index": 5305,
+        "lines": 252,
+        "source_bin": "200-300",
+        "source_position": 260
+      },
+      {
+        "position": 258,
+        "dataset_index": 5338,
+        "lines": 206,
+        "source_bin": "200-300",
+        "source_position": 263
+      },
+      {
+        "position": 259,
+        "dataset_index": 5343,
+        "lines": 206,
+        "source_bin": "200-300",
+        "source_position": 264
+      },
+      {
+        "position": 260,
+        "dataset_index": 5344,
+        "lines": 584,
+        "source_bin": "500-1000",
+        "source_position": 258
+      },
+      {
+        "position": 261,
+        "dataset_index": 5395,
+        "lines": 330,
+        "source_bin": "300-500",
+        "source_position": 268
+      },
+      {
+        "position": 262,
+        "dataset_index": 5415,
+        "lines": 403,
+        "source_bin": "300-500",
+        "source_position": 270
+      },
+      {
+        "position": 263,
+        "dataset_index": 5435,
+        "lines": 205,
+        "source_bin": "200-300",
+        "source_position": 268
+      },
+      {
+        "position": 264,
+        "dataset_index": 5460,
+        "lines": 328,
+        "source_bin": "300-500",
+        "source_position": 275
+      },
+      {
+        "position": 265,
+        "dataset_index": 5472,
+        "lines": 649,
+        "source_bin": "500-1000",
+        "source_position": 267
+      },
+      {
+        "position": 266,
+        "dataset_index": 5474,
+        "lines": 290,
+        "source_bin": "200-300",
+        "source_position": 271
+      },
+      {
+        "position": 267,
+        "dataset_index": 5489,
+        "lines": 280,
+        "source_bin": "200-300",
+        "source_position": 272
+      },
+      {
+        "position": 268,
+        "dataset_index": 5490,
+        "lines": 684,
+        "source_bin": "500-1000",
+        "source_position": 268
+      },
+      {
+        "position": 269,
+        "dataset_index": 5500,
+        "lines": 346,
+        "source_bin": "300-500",
+        "source_position": 277
+      },
+      {
+        "position": 270,
+        "dataset_index": 5520,
+        "lines": 563,
+        "source_bin": "500-1000",
+        "source_position": 269
+      },
+      {
+        "position": 271,
+        "dataset_index": 5528,
+        "lines": 369,
+        "source_bin": "300-500",
+        "source_position": 280
+      },
+      {
+        "position": 272,
+        "dataset_index": 5549,
+        "lines": 487,
+        "source_bin": "300-500",
+        "source_position": 281
+      },
+      {
+        "position": 273,
+        "dataset_index": 5586,
+        "lines": 961,
+        "source_bin": "500-1000",
+        "source_position": 271
+      },
+      {
+        "position": 274,
+        "dataset_index": 5591,
+        "lines": 523,
+        "source_bin": "500-1000",
+        "source_position": 272
+      },
+      {
+        "position": 275,
+        "dataset_index": 5615,
+        "lines": 510,
+        "source_bin": "500-1000",
+        "source_position": 277
+      },
+      {
+        "position": 276,
+        "dataset_index": 5616,
+        "lines": 445,
+        "source_bin": "300-500",
+        "source_position": 284
+      },
+      {
+        "position": 277,
+        "dataset_index": 5644,
+        "lines": 262,
+        "source_bin": "200-300",
+        "source_position": 282
+      },
+      {
+        "position": 278,
+        "dataset_index": 5665,
+        "lines": 756,
+        "source_bin": "500-1000",
+        "source_position": 279
+      },
+      {
+        "position": 279,
+        "dataset_index": 5682,
+        "lines": 504,
+        "source_bin": "500-1000",
+        "source_position": 281
+      },
+      {
+        "position": 280,
+        "dataset_index": 5686,
+        "lines": 204,
+        "source_bin": "200-300",
+        "source_position": 284
+      },
+      {
+        "position": 281,
+        "dataset_index": 5696,
+        "lines": 643,
+        "source_bin": "500-1000",
+        "source_position": 283
+      },
+      {
+        "position": 282,
+        "dataset_index": 5718,
+        "lines": 615,
+        "source_bin": "500-1000",
+        "source_position": 287
+      },
+      {
+        "position": 283,
+        "dataset_index": 5728,
+        "lines": 540,
+        "source_bin": "500-1000",
+        "source_position": 289
+      },
+      {
+        "position": 284,
+        "dataset_index": 5733,
+        "lines": 376,
+        "source_bin": "300-500",
+        "source_position": 287
+      },
+      {
+        "position": 285,
+        "dataset_index": 5742,
+        "lines": 259,
+        "source_bin": "200-300",
+        "source_position": 285
+      },
+      {
+        "position": 286,
+        "dataset_index": 5780,
+        "lines": 374,
+        "source_bin": "300-500",
+        "source_position": 290
+      },
+      {
+        "position": 287,
+        "dataset_index": 5781,
+        "lines": 236,
+        "source_bin": "200-300",
+        "source_position": 287
+      },
+      {
+        "position": 288,
+        "dataset_index": 5785,
+        "lines": 212,
+        "source_bin": "200-300",
+        "source_position": 289
+      },
+      {
+        "position": 289,
+        "dataset_index": 5824,
+        "lines": 480,
+        "source_bin": "300-500",
+        "source_position": 292
+      },
+      {
+        "position": 290,
+        "dataset_index": 5834,
+        "lines": 244,
+        "source_bin": "200-300",
+        "source_position": 291
+      },
+      {
+        "position": 291,
+        "dataset_index": 5847,
+        "lines": 202,
+        "source_bin": "200-300",
+        "source_position": 294
+      },
+      {
+        "position": 292,
+        "dataset_index": 5851,
+        "lines": 754,
+        "source_bin": "500-1000",
+        "source_position": 290
+      },
+      {
+        "position": 293,
+        "dataset_index": 5853,
+        "lines": 403,
+        "source_bin": "300-500",
+        "source_position": 294
+      },
+      {
+        "position": 294,
+        "dataset_index": 5855,
+        "lines": 311,
+        "source_bin": "300-500",
+        "source_position": 295
+      },
+      {
+        "position": 295,
+        "dataset_index": 5889,
+        "lines": 201,
+        "source_bin": "200-300",
+        "source_position": 298
+      },
+      {
+        "position": 296,
+        "dataset_index": 5894,
+        "lines": 481,
+        "source_bin": "300-500",
+        "source_position": 298
+      },
+      {
+        "position": 297,
+        "dataset_index": 5902,
+        "lines": 632,
+        "source_bin": "500-1000",
+        "source_position": 292
+      },
+      {
+        "position": 298,
+        "dataset_index": 5919,
+        "lines": 508,
+        "source_bin": "500-1000",
+        "source_position": 295
+      },
+      {
+        "position": 299,
+        "dataset_index": 5972,
+        "lines": 209,
+        "source_bin": "200-300",
+        "source_position": 302
+      },
+      {
+        "position": 300,
+        "dataset_index": 5978,
+        "lines": 512,
+        "source_bin": "500-1000",
+        "source_position": 296
+      },
+      {
+        "position": 301,
+        "dataset_index": 5998,
+        "lines": 436,
+        "source_bin": "300-500",
+        "source_position": 304
+      },
+      {
+        "position": 302,
+        "dataset_index": 6021,
+        "lines": 339,
+        "source_bin": "300-500",
+        "source_position": 306
+      },
+      {
+        "position": 303,
+        "dataset_index": 6036,
+        "lines": 235,
+        "source_bin": "200-300",
+        "source_position": 304
+      },
+      {
+        "position": 304,
+        "dataset_index": 6085,
+        "lines": 301,
+        "source_bin": "300-500",
+        "source_position": 312
+      },
+      {
+        "position": 305,
+        "dataset_index": 6101,
+        "lines": 699,
+        "source_bin": "500-1000",
+        "source_position": 298
+      },
+      {
+        "position": 306,
+        "dataset_index": 6108,
+        "lines": 709,
+        "source_bin": "500-1000",
+        "source_position": 299
+      },
+      {
+        "position": 307,
+        "dataset_index": 6126,
+        "lines": 757,
+        "source_bin": "500-1000",
+        "source_position": 301
+      },
+      {
+        "position": 308,
+        "dataset_index": 6142,
+        "lines": 445,
+        "source_bin": "300-500",
+        "source_position": 313
+      },
+      {
+        "position": 309,
+        "dataset_index": 6234,
+        "lines": 240,
+        "source_bin": "200-300",
+        "source_position": 313
+      },
+      {
+        "position": 310,
+        "dataset_index": 6237,
+        "lines": 270,
+        "source_bin": "200-300",
+        "source_position": 314
+      },
+      {
+        "position": 311,
+        "dataset_index": 6283,
+        "lines": 275,
+        "source_bin": "200-300",
+        "source_position": 317
+      },
+      {
+        "position": 312,
+        "dataset_index": 6299,
+        "lines": 662,
+        "source_bin": "500-1000",
+        "source_position": 304
+      },
+      {
+        "position": 313,
+        "dataset_index": 6343,
+        "lines": 524,
+        "source_bin": "500-1000",
+        "source_position": 307
+      },
+      {
+        "position": 314,
+        "dataset_index": 6378,
+        "lines": 282,
+        "source_bin": "200-300",
+        "source_position": 321
+      },
+      {
+        "position": 315,
+        "dataset_index": 6379,
+        "lines": 248,
+        "source_bin": "200-300",
+        "source_position": 322
+      },
+      {
+        "position": 316,
+        "dataset_index": 6387,
+        "lines": 211,
+        "source_bin": "200-300",
+        "source_position": 323
+      },
+      {
+        "position": 317,
+        "dataset_index": 6406,
+        "lines": 322,
+        "source_bin": "300-500",
+        "source_position": 324
+      },
+      {
+        "position": 318,
+        "dataset_index": 6423,
+        "lines": 512,
+        "source_bin": "500-1000",
+        "source_position": 313
+      },
+      {
+        "position": 319,
+        "dataset_index": 6483,
+        "lines": 554,
+        "source_bin": "500-1000",
+        "source_position": 319
+      },
+      {
+        "position": 320,
+        "dataset_index": 6488,
+        "lines": 228,
+        "source_bin": "200-300",
+        "source_position": 329
+      },
+      {
+        "position": 321,
+        "dataset_index": 6507,
+        "lines": 247,
+        "source_bin": "200-300",
+        "source_position": 330
+      },
+      {
+        "position": 322,
+        "dataset_index": 6512,
+        "lines": 213,
+        "source_bin": "200-300",
+        "source_position": 331
+      },
+      {
+        "position": 323,
+        "dataset_index": 6523,
+        "lines": 727,
+        "source_bin": "500-1000",
+        "source_position": 320
+      },
+      {
+        "position": 324,
+        "dataset_index": 6524,
+        "lines": 582,
+        "source_bin": "500-1000",
+        "source_position": 321
+      },
+      {
+        "position": 325,
+        "dataset_index": 6534,
+        "lines": 838,
+        "source_bin": "500-1000",
+        "source_position": 323
+      },
+      {
+        "position": 326,
+        "dataset_index": 6562,
+        "lines": 276,
+        "source_bin": "200-300",
+        "source_position": 337
+      },
+      {
+        "position": 327,
+        "dataset_index": 6603,
+        "lines": 209,
+        "source_bin": "200-300",
+        "source_position": 340
+      },
+      {
+        "position": 328,
+        "dataset_index": 6644,
+        "lines": 315,
+        "source_bin": "300-500",
+        "source_position": 333
+      },
+      {
+        "position": 329,
+        "dataset_index": 6754,
+        "lines": 288,
+        "source_bin": "200-300",
+        "source_position": 346
+      },
+      {
+        "position": 330,
+        "dataset_index": 6763,
+        "lines": 233,
+        "source_bin": "200-300",
+        "source_position": 347
+      },
+      {
+        "position": 331,
+        "dataset_index": 6769,
+        "lines": 202,
+        "source_bin": "200-300",
+        "source_position": 348
+      },
+      {
+        "position": 332,
+        "dataset_index": 6782,
+        "lines": 718,
+        "source_bin": "500-1000",
+        "source_position": 331
+      },
+      {
+        "position": 333,
+        "dataset_index": 6810,
+        "lines": 855,
+        "source_bin": "500-1000",
+        "source_position": 333
+      },
+      {
+        "position": 334,
+        "dataset_index": 6868,
+        "lines": 633,
+        "source_bin": "500-1000",
+        "source_position": 337
+      },
+      {
+        "position": 335,
+        "dataset_index": 6881,
+        "lines": 460,
+        "source_bin": "300-500",
+        "source_position": 340
+      },
+      {
+        "position": 336,
+        "dataset_index": 6931,
+        "lines": 320,
+        "source_bin": "300-500",
+        "source_position": 342
+      },
+      {
+        "position": 337,
+        "dataset_index": 6935,
+        "lines": 324,
+        "source_bin": "300-500",
+        "source_position": 343
+      },
+      {
+        "position": 338,
+        "dataset_index": 6939,
+        "lines": 431,
+        "source_bin": "300-500",
+        "source_position": 346
+      },
+      {
+        "position": 339,
+        "dataset_index": 6989,
+        "lines": 805,
+        "source_bin": "500-1000",
+        "source_position": 344
+      },
+      {
+        "position": 340,
+        "dataset_index": 7024,
+        "lines": 592,
+        "source_bin": "500-1000",
+        "source_position": 347
+      },
+      {
+        "position": 341,
+        "dataset_index": 7042,
+        "lines": 231,
+        "source_bin": "200-300",
+        "source_position": 359
+      },
+      {
+        "position": 342,
+        "dataset_index": 7048,
+        "lines": 393,
+        "source_bin": "300-500",
+        "source_position": 349
+      },
+      {
+        "position": 343,
+        "dataset_index": 7051,
+        "lines": 669,
+        "source_bin": "500-1000",
+        "source_position": 348
+      },
+      {
+        "position": 344,
+        "dataset_index": 7082,
+        "lines": 327,
+        "source_bin": "300-500",
+        "source_position": 350
+      },
+      {
+        "position": 345,
+        "dataset_index": 7167,
+        "lines": 283,
+        "source_bin": "200-300",
+        "source_position": 364
+      },
+      {
+        "position": 346,
+        "dataset_index": 7208,
+        "lines": 252,
+        "source_bin": "200-300",
+        "source_position": 366
+      },
+      {
+        "position": 347,
+        "dataset_index": 7234,
+        "lines": 203,
+        "source_bin": "200-300",
+        "source_position": 367
+      },
+      {
+        "position": 348,
+        "dataset_index": 7296,
+        "lines": 221,
+        "source_bin": "200-300",
+        "source_position": 370
+      },
+      {
+        "position": 349,
+        "dataset_index": 7328,
+        "lines": 757,
+        "source_bin": "500-1000",
+        "source_position": 360
+      },
+      {
+        "position": 350,
+        "dataset_index": 7350,
+        "lines": 259,
+        "source_bin": "200-300",
+        "source_position": 372
+      },
+      {
+        "position": 351,
+        "dataset_index": 7389,
+        "lines": 861,
+        "source_bin": "500-1000",
+        "source_position": 362
+      },
+      {
+        "position": 352,
+        "dataset_index": 7393,
+        "lines": 975,
+        "source_bin": "500-1000",
+        "source_position": 363
+      },
+      {
+        "position": 353,
+        "dataset_index": 7417,
+        "lines": 302,
+        "source_bin": "300-500",
+        "source_position": 360
+      },
+      {
+        "position": 354,
+        "dataset_index": 7427,
+        "lines": 331,
+        "source_bin": "300-500",
+        "source_position": 361
+      },
+      {
+        "position": 355,
+        "dataset_index": 7465,
+        "lines": 631,
+        "source_bin": "500-1000",
+        "source_position": 367
+      },
+      {
+        "position": 356,
+        "dataset_index": 7469,
+        "lines": 221,
+        "source_bin": "200-300",
+        "source_position": 377
+      },
+      {
+        "position": 357,
+        "dataset_index": 7486,
+        "lines": 243,
+        "source_bin": "200-300",
+        "source_position": 379
+      },
+      {
+        "position": 358,
+        "dataset_index": 7537,
+        "lines": 385,
+        "source_bin": "300-500",
+        "source_position": 367
+      },
+      {
+        "position": 359,
+        "dataset_index": 7562,
+        "lines": 328,
+        "source_bin": "300-500",
+        "source_position": 368
+      },
+      {
+        "position": 360,
+        "dataset_index": 7574,
+        "lines": 510,
+        "source_bin": "500-1000",
+        "source_position": 371
+      },
+      {
+        "position": 361,
+        "dataset_index": 7609,
+        "lines": 395,
+        "source_bin": "300-500",
+        "source_position": 371
+      },
+      {
+        "position": 362,
+        "dataset_index": 7621,
+        "lines": 256,
+        "source_bin": "200-300",
+        "source_position": 387
+      },
+      {
+        "position": 363,
+        "dataset_index": 7628,
+        "lines": 930,
+        "source_bin": "500-1000",
+        "source_position": 376
+      },
+      {
+        "position": 364,
+        "dataset_index": 7636,
+        "lines": 286,
+        "source_bin": "200-300",
+        "source_position": 388
+      },
+      {
+        "position": 365,
+        "dataset_index": 7641,
+        "lines": 570,
+        "source_bin": "500-1000",
+        "source_position": 377
+      },
+      {
+        "position": 366,
+        "dataset_index": 7652,
+        "lines": 379,
+        "source_bin": "300-500",
+        "source_position": 373
+      },
+      {
+        "position": 367,
+        "dataset_index": 7665,
+        "lines": 325,
+        "source_bin": "300-500",
+        "source_position": 374
+      },
+      {
+        "position": 368,
+        "dataset_index": 7680,
+        "lines": 387,
+        "source_bin": "300-500",
+        "source_position": 377
+      },
+      {
+        "position": 369,
+        "dataset_index": 7692,
+        "lines": 296,
+        "source_bin": "200-300",
+        "source_position": 389
+      },
+      {
+        "position": 370,
+        "dataset_index": 7704,
+        "lines": 744,
+        "source_bin": "500-1000",
+        "source_position": 380
+      },
+      {
+        "position": 371,
+        "dataset_index": 7737,
+        "lines": 341,
+        "source_bin": "300-500",
+        "source_position": 380
+      },
+      {
+        "position": 372,
+        "dataset_index": 7741,
+        "lines": 520,
+        "source_bin": "500-1000",
+        "source_position": 381
+      },
+      {
+        "position": 373,
+        "dataset_index": 7768,
+        "lines": 527,
+        "source_bin": "500-1000",
+        "source_position": 382
+      },
+      {
+        "position": 374,
+        "dataset_index": 7788,
+        "lines": 389,
+        "source_bin": "300-500",
+        "source_position": 382
+      },
+      {
+        "position": 375,
+        "dataset_index": 7806,
+        "lines": 446,
+        "source_bin": "300-500",
+        "source_position": 385
+      },
+      {
+        "position": 376,
+        "dataset_index": 7839,
+        "lines": 302,
+        "source_bin": "300-500",
+        "source_position": 387
+      },
+      {
+        "position": 377,
+        "dataset_index": 7867,
+        "lines": 542,
+        "source_bin": "500-1000",
+        "source_position": 383
+      },
+      {
+        "position": 378,
+        "dataset_index": 7869,
+        "lines": 586,
+        "source_bin": "500-1000",
+        "source_position": 384
+      },
+      {
+        "position": 379,
+        "dataset_index": 7870,
+        "lines": 696,
+        "source_bin": "500-1000",
+        "source_position": 385
+      },
+      {
+        "position": 380,
+        "dataset_index": 7882,
+        "lines": 587,
+        "source_bin": "500-1000",
+        "source_position": 386
+      },
+      {
+        "position": 381,
+        "dataset_index": 7995,
+        "lines": 328,
+        "source_bin": "300-500",
+        "source_position": 391
+      },
+      {
+        "position": 382,
+        "dataset_index": 7998,
+        "lines": 472,
+        "source_bin": "300-500",
+        "source_position": 392
+      },
+      {
+        "position": 383,
+        "dataset_index": 8000,
+        "lines": 234,
+        "source_bin": "200-300",
+        "source_position": 399
+      },
+      {
+        "position": 384,
+        "dataset_index": 8005,
+        "lines": 640,
+        "source_bin": "500-1000",
+        "source_position": 392
+      },
+      {
+        "position": 385,
+        "dataset_index": 8048,
+        "lines": 403,
+        "source_bin": "300-500",
+        "source_position": 397
+      },
+      {
+        "position": 386,
+        "dataset_index": 8143,
+        "lines": 230,
+        "source_bin": "200-300",
+        "source_position": 406
+      },
+      {
+        "position": 387,
+        "dataset_index": 8160,
+        "lines": 745,
+        "source_bin": "500-1000",
+        "source_position": 400
+      },
+      {
+        "position": 388,
+        "dataset_index": 8184,
+        "lines": 454,
+        "source_bin": "300-500",
+        "source_position": 403
+      },
+      {
+        "position": 389,
+        "dataset_index": 8187,
+        "lines": 702,
+        "source_bin": "500-1000",
+        "source_position": 401
+      },
+      {
+        "position": 390,
+        "dataset_index": 8188,
+        "lines": 672,
+        "source_bin": "500-1000",
+        "source_position": 402
+      },
+      {
+        "position": 391,
+        "dataset_index": 8204,
+        "lines": 317,
+        "source_bin": "300-500",
+        "source_position": 406
+      },
+      {
+        "position": 392,
+        "dataset_index": 8207,
+        "lines": 576,
+        "source_bin": "500-1000",
+        "source_position": 404
+      },
+      {
+        "position": 393,
+        "dataset_index": 8216,
+        "lines": 658,
+        "source_bin": "500-1000",
+        "source_position": 405
+      },
+      {
+        "position": 394,
+        "dataset_index": 8223,
+        "lines": 296,
+        "source_bin": "200-300",
+        "source_position": 407
+      },
+      {
+        "position": 395,
+        "dataset_index": 8252,
+        "lines": 648,
+        "source_bin": "500-1000",
+        "source_position": 407
+      },
+      {
+        "position": 396,
+        "dataset_index": 8255,
+        "lines": 593,
+        "source_bin": "500-1000",
+        "source_position": 408
+      },
+      {
+        "position": 397,
+        "dataset_index": 8259,
+        "lines": 280,
+        "source_bin": "200-300",
+        "source_position": 410
+      },
+      {
+        "position": 398,
+        "dataset_index": 8277,
+        "lines": 439,
+        "source_bin": "300-500",
+        "source_position": 411
+      },
+      {
+        "position": 399,
+        "dataset_index": 8300,
+        "lines": 320,
+        "source_bin": "300-500",
+        "source_position": 414
+      },
+      {
+        "position": 400,
+        "dataset_index": 8308,
+        "lines": 218,
+        "source_bin": "200-300",
+        "source_position": 413
+      },
+      {
+        "position": 401,
+        "dataset_index": 8314,
+        "lines": 365,
+        "source_bin": "300-500",
+        "source_position": 415
+      },
+      {
+        "position": 402,
+        "dataset_index": 8333,
+        "lines": 368,
+        "source_bin": "300-500",
+        "source_position": 416
+      },
+      {
+        "position": 403,
+        "dataset_index": 8337,
+        "lines": 361,
+        "source_bin": "300-500",
+        "source_position": 417
+      },
+      {
+        "position": 404,
+        "dataset_index": 8348,
+        "lines": 309,
+        "source_bin": "300-500",
+        "source_position": 418
+      },
+      {
+        "position": 405,
+        "dataset_index": 8373,
+        "lines": 342,
+        "source_bin": "300-500",
+        "source_position": 421
+      },
+      {
+        "position": 406,
+        "dataset_index": 8375,
+        "lines": 277,
+        "source_bin": "200-300",
+        "source_position": 415
+      },
+      {
+        "position": 407,
+        "dataset_index": 8378,
+        "lines": 725,
+        "source_bin": "500-1000",
+        "source_position": 414
+      },
+      {
+        "position": 408,
+        "dataset_index": 8417,
+        "lines": 214,
+        "source_bin": "200-300",
+        "source_position": 418
+      },
+      {
+        "position": 409,
+        "dataset_index": 8426,
+        "lines": 246,
+        "source_bin": "200-300",
+        "source_position": 419
+      },
+      {
+        "position": 410,
+        "dataset_index": 8432,
+        "lines": 783,
+        "source_bin": "500-1000",
+        "source_position": 416
+      },
+      {
+        "position": 411,
+        "dataset_index": 8438,
+        "lines": 468,
+        "source_bin": "300-500",
+        "source_position": 424
+      },
+      {
+        "position": 412,
+        "dataset_index": 8444,
+        "lines": 216,
+        "source_bin": "200-300",
+        "source_position": 422
+      },
+      {
+        "position": 413,
+        "dataset_index": 8478,
+        "lines": 506,
+        "source_bin": "500-1000",
+        "source_position": 417
+      },
+      {
+        "position": 414,
+        "dataset_index": 8479,
+        "lines": 660,
+        "source_bin": "500-1000",
+        "source_position": 418
+      },
+      {
+        "position": 415,
+        "dataset_index": 8483,
+        "lines": 415,
+        "source_bin": "300-500",
+        "source_position": 426
+      },
+      {
+        "position": 416,
+        "dataset_index": 8523,
+        "lines": 262,
+        "source_bin": "200-300",
+        "source_position": 426
+      },
+      {
+        "position": 417,
+        "dataset_index": 8526,
+        "lines": 639,
+        "source_bin": "500-1000",
+        "source_position": 421
+      },
+      {
+        "position": 418,
+        "dataset_index": 8539,
+        "lines": 363,
+        "source_bin": "300-500",
+        "source_position": 429
+      },
+      {
+        "position": 419,
+        "dataset_index": 8580,
+        "lines": 230,
+        "source_bin": "200-300",
+        "source_position": 428
+      },
+      {
+        "position": 420,
+        "dataset_index": 8595,
+        "lines": 201,
+        "source_bin": "200-300",
+        "source_position": 429
+      },
+      {
+        "position": 421,
+        "dataset_index": 8611,
+        "lines": 200,
+        "source_bin": "200-300",
+        "source_position": 432
+      },
+      {
+        "position": 422,
+        "dataset_index": 8639,
+        "lines": 227,
+        "source_bin": "200-300",
+        "source_position": 434
+      },
+      {
+        "position": 423,
+        "dataset_index": 8658,
+        "lines": 320,
+        "source_bin": "300-500",
+        "source_position": 431
+      },
+      {
+        "position": 424,
+        "dataset_index": 8685,
+        "lines": 706,
+        "source_bin": "500-1000",
+        "source_position": 428
+      },
+      {
+        "position": 425,
+        "dataset_index": 8745,
+        "lines": 224,
+        "source_bin": "200-300",
+        "source_position": 439
+      },
+      {
+        "position": 426,
+        "dataset_index": 8769,
+        "lines": 616,
+        "source_bin": "500-1000",
+        "source_position": 432
+      },
+      {
+        "position": 427,
+        "dataset_index": 8772,
+        "lines": 240,
+        "source_bin": "200-300",
+        "source_position": 440
+      },
+      {
+        "position": 428,
+        "dataset_index": 8788,
+        "lines": 830,
+        "source_bin": "500-1000",
+        "source_position": 433
+      },
+      {
+        "position": 429,
+        "dataset_index": 8799,
+        "lines": 810,
+        "source_bin": "500-1000",
+        "source_position": 434
+      },
+      {
+        "position": 430,
+        "dataset_index": 8802,
+        "lines": 360,
+        "source_bin": "300-500",
+        "source_position": 437
+      },
+      {
+        "position": 431,
+        "dataset_index": 8806,
+        "lines": 202,
+        "source_bin": "200-300",
+        "source_position": 442
+      },
+      {
+        "position": 432,
+        "dataset_index": 8835,
+        "lines": 460,
+        "source_bin": "300-500",
+        "source_position": 438
+      },
+      {
+        "position": 433,
+        "dataset_index": 8842,
+        "lines": 253,
+        "source_bin": "200-300",
+        "source_position": 444
+      },
+      {
+        "position": 434,
+        "dataset_index": 8845,
+        "lines": 546,
+        "source_bin": "500-1000",
+        "source_position": 437
+      },
+      {
+        "position": 435,
+        "dataset_index": 8891,
+        "lines": 769,
+        "source_bin": "500-1000",
+        "source_position": 442
+      },
+      {
+        "position": 436,
+        "dataset_index": 8937,
+        "lines": 788,
+        "source_bin": "500-1000",
+        "source_position": 444
+      },
+      {
+        "position": 437,
+        "dataset_index": 8941,
+        "lines": 875,
+        "source_bin": "500-1000",
+        "source_position": 445
+      },
+      {
+        "position": 438,
+        "dataset_index": 8954,
+        "lines": 211,
+        "source_bin": "200-300",
+        "source_position": 448
+      },
+      {
+        "position": 439,
+        "dataset_index": 8956,
+        "lines": 430,
+        "source_bin": "300-500",
+        "source_position": 441
+      },
+      {
+        "position": 440,
+        "dataset_index": 9014,
+        "lines": 441,
+        "source_bin": "300-500",
+        "source_position": 442
+      },
+      {
+        "position": 441,
+        "dataset_index": 9030,
+        "lines": 735,
+        "source_bin": "500-1000",
+        "source_position": 448
+      },
+      {
+        "position": 442,
+        "dataset_index": 9034,
+        "lines": 789,
+        "source_bin": "500-1000",
+        "source_position": 449
+      },
+      {
+        "position": 443,
+        "dataset_index": 9044,
+        "lines": 252,
+        "source_bin": "200-300",
+        "source_position": 451
+      },
+      {
+        "position": 444,
+        "dataset_index": 9109,
+        "lines": 205,
+        "source_bin": "200-300",
+        "source_position": 453
+      },
+      {
+        "position": 445,
+        "dataset_index": 9116,
+        "lines": 216,
+        "source_bin": "200-300",
+        "source_position": 454
+      },
+      {
+        "position": 446,
+        "dataset_index": 9134,
+        "lines": 577,
+        "source_bin": "500-1000",
+        "source_position": 455
+      },
+      {
+        "position": 447,
+        "dataset_index": 9159,
+        "lines": 376,
+        "source_bin": "300-500",
+        "source_position": 450
+      },
+      {
+        "position": 448,
+        "dataset_index": 9181,
+        "lines": 311,
+        "source_bin": "300-500",
+        "source_position": 451
+      },
+      {
+        "position": 449,
+        "dataset_index": 9193,
+        "lines": 822,
+        "source_bin": "500-1000",
+        "source_position": 458
+      },
+      {
+        "position": 450,
+        "dataset_index": 9207,
+        "lines": 330,
+        "source_bin": "300-500",
+        "source_position": 453
+      },
+      {
+        "position": 451,
+        "dataset_index": 9212,
+        "lines": 310,
+        "source_bin": "300-500",
+        "source_position": 454
+      },
+      {
+        "position": 452,
+        "dataset_index": 9215,
+        "lines": 441,
+        "source_bin": "300-500",
+        "source_position": 455
+      },
+      {
+        "position": 453,
+        "dataset_index": 9229,
+        "lines": 770,
+        "source_bin": "500-1000",
+        "source_position": 460
+      },
+      {
+        "position": 454,
+        "dataset_index": 9239,
+        "lines": 326,
+        "source_bin": "300-500",
+        "source_position": 456
+      },
+      {
+        "position": 455,
+        "dataset_index": 9242,
+        "lines": 272,
+        "source_bin": "200-300",
+        "source_position": 458
+      },
+      {
+        "position": 456,
+        "dataset_index": 9264,
+        "lines": 499,
+        "source_bin": "300-500",
+        "source_position": 458
+      },
+      {
+        "position": 457,
+        "dataset_index": 9286,
+        "lines": 206,
+        "source_bin": "200-300",
+        "source_position": 462
+      },
+      {
+        "position": 458,
+        "dataset_index": 9295,
+        "lines": 309,
+        "source_bin": "300-500",
+        "source_position": 460
+      },
+      {
+        "position": 459,
+        "dataset_index": 9296,
+        "lines": 319,
+        "source_bin": "300-500",
+        "source_position": 461
+      },
+      {
+        "position": 460,
+        "dataset_index": 9304,
+        "lines": 611,
+        "source_bin": "500-1000",
+        "source_position": 467
+      },
+      {
+        "position": 461,
+        "dataset_index": 9341,
+        "lines": 800,
+        "source_bin": "500-1000",
+        "source_position": 468
+      },
+      {
+        "position": 462,
+        "dataset_index": 9343,
+        "lines": 735,
+        "source_bin": "500-1000",
+        "source_position": 469
+      },
+      {
+        "position": 463,
+        "dataset_index": 9364,
+        "lines": 291,
+        "source_bin": "200-300",
+        "source_position": 466
+      },
+      {
+        "position": 464,
+        "dataset_index": 9395,
+        "lines": 277,
+        "source_bin": "200-300",
+        "source_position": 469
+      },
+      {
+        "position": 465,
+        "dataset_index": 9401,
+        "lines": 298,
+        "source_bin": "200-300",
+        "source_position": 471
+      },
+      {
+        "position": 466,
+        "dataset_index": 9405,
+        "lines": 280,
+        "source_bin": "200-300",
+        "source_position": 473
+      },
+      {
+        "position": 467,
+        "dataset_index": 9406,
+        "lines": 205,
+        "source_bin": "200-300",
+        "source_position": 474
+      },
+      {
+        "position": 468,
+        "dataset_index": 9410,
+        "lines": 437,
+        "source_bin": "300-500",
+        "source_position": 465
+      },
+      {
+        "position": 469,
+        "dataset_index": 9418,
+        "lines": 427,
+        "source_bin": "300-500",
+        "source_position": 466
+      },
+      {
+        "position": 470,
+        "dataset_index": 9449,
+        "lines": 204,
+        "source_bin": "200-300",
+        "source_position": 475
+      },
+      {
+        "position": 471,
+        "dataset_index": 9450,
+        "lines": 235,
+        "source_bin": "200-300",
+        "source_position": 476
+      },
+      {
+        "position": 472,
+        "dataset_index": 9472,
+        "lines": 633,
+        "source_bin": "500-1000",
+        "source_position": 474
+      },
+      {
+        "position": 473,
+        "dataset_index": 9518,
+        "lines": 361,
+        "source_bin": "300-500",
+        "source_position": 470
+      },
+      {
+        "position": 474,
+        "dataset_index": 9545,
+        "lines": 409,
+        "source_bin": "300-500",
+        "source_position": 471
+      },
+      {
+        "position": 475,
+        "dataset_index": 9569,
+        "lines": 799,
+        "source_bin": "500-1000",
+        "source_position": 476
+      },
+      {
+        "position": 476,
+        "dataset_index": 9573,
+        "lines": 700,
+        "source_bin": "500-1000",
+        "source_position": 477
+      },
+      {
+        "position": 477,
+        "dataset_index": 9624,
+        "lines": 341,
+        "source_bin": "300-500",
+        "source_position": 476
+      },
+      {
+        "position": 478,
+        "dataset_index": 9658,
+        "lines": 972,
+        "source_bin": "500-1000",
+        "source_position": 482
+      },
+      {
+        "position": 479,
+        "dataset_index": 9660,
+        "lines": 413,
+        "source_bin": "300-500",
+        "source_position": 477
+      },
+      {
+        "position": 480,
+        "dataset_index": 9677,
+        "lines": 605,
+        "source_bin": "500-1000",
+        "source_position": 483
+      },
+      {
+        "position": 481,
+        "dataset_index": 9714,
+        "lines": 414,
+        "source_bin": "300-500",
+        "source_position": 480
+      },
+      {
+        "position": 482,
+        "dataset_index": 9723,
+        "lines": 215,
+        "source_bin": "200-300",
+        "source_position": 485
+      },
+      {
+        "position": 483,
+        "dataset_index": 9730,
+        "lines": 226,
+        "source_bin": "200-300",
+        "source_position": 486
+      },
+      {
+        "position": 484,
+        "dataset_index": 9736,
+        "lines": 213,
+        "source_bin": "200-300",
+        "source_position": 487
+      },
+      {
+        "position": 485,
+        "dataset_index": 9739,
+        "lines": 206,
+        "source_bin": "200-300",
+        "source_position": 488
+      },
+      {
+        "position": 486,
+        "dataset_index": 9755,
+        "lines": 466,
+        "source_bin": "300-500",
+        "source_position": 484
+      },
+      {
+        "position": 487,
+        "dataset_index": 9769,
+        "lines": 352,
+        "source_bin": "300-500",
+        "source_position": 488
+      },
+      {
+        "position": 488,
+        "dataset_index": 9783,
+        "lines": 216,
+        "source_bin": "200-300",
+        "source_position": 490
+      },
+      {
+        "position": 489,
+        "dataset_index": 9801,
+        "lines": 321,
+        "source_bin": "300-500",
+        "source_position": 489
+      },
+      {
+        "position": 490,
+        "dataset_index": 9811,
+        "lines": 746,
+        "source_bin": "500-1000",
+        "source_position": 492
+      },
+      {
+        "position": 491,
+        "dataset_index": 9832,
+        "lines": 222,
+        "source_bin": "200-300",
+        "source_position": 492
+      },
+      {
+        "position": 492,
+        "dataset_index": 9900,
+        "lines": 549,
+        "source_bin": "500-1000",
+        "source_position": 497
+      },
+      {
+        "position": 493,
+        "dataset_index": 9902,
+        "lines": 207,
+        "source_bin": "200-300",
+        "source_position": 494
+      },
+      {
+        "position": 494,
+        "dataset_index": 9905,
+        "lines": 457,
+        "source_bin": "300-500",
+        "source_position": 494
+      },
+      {
+        "position": 495,
+        "dataset_index": 9930,
+        "lines": 398,
+        "source_bin": "300-500",
+        "source_position": 495
+      },
+      {
+        "position": 496,
+        "dataset_index": 9949,
+        "lines": 239,
+        "source_bin": "200-300",
+        "source_position": 496
+      },
+      {
+        "position": 497,
+        "dataset_index": 9967,
+        "lines": 369,
+        "source_bin": "300-500",
+        "source_position": 498
+      },
+      {
+        "position": 498,
+        "dataset_index": 9981,
+        "lines": 600,
+        "source_bin": "500-1000",
+        "source_position": 499
+      },
+      {
+        "position": 499,
+        "dataset_index": 9990,
+        "lines": 343,
+        "source_bin": "300-500",
+        "source_position": 499
+      }
+    ]
+  }
+}

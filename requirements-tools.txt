@@ -1,0 +1,22 @@
+# CPU-side tools (instance sampling, the LoC census, calibration page generation, OCR control,
+# scoring and the paired statistics). Python 3.14. The versions are the ones used for the study.
+datasets==4.8.3
+huggingface-hub==1.9.0
+transformers==5.5.0
+torch==2.11.0                 # CPU use only: the two models' processors (scripts/calibrate_legibility.py gen) need torch + torchvision
+torchvision==0.26.0
+tokenizers==0.22.2
+numpy==2.2.6
+scipy==1.17.1
+pillow==12.1.1
+pygments==2.19.2
+rapidocr-onnxruntime==1.4.4
+onnxruntime==1.28.0
+opencv-python==5.0.0.93
+editdistance==0.8.1
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.27.3
+fire==0.7.1
+loguru==0.7.3
+tqdm==4.67.3
+python-dotenv==1.2.2
